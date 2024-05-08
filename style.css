@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+#error{
+    display: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #4fafff;
+}
+.barra{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#2196f3;
+}
+#links a{
+    color: black;
+    padding: 1vh;
+    font-size: 160%;
+    text-decoration: none;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+    align-items: center;
+    text-align: center;
+    margin-top: 13vh;
+    margin-bottom: 3vh;
+}
+h1{
+    color:#b44e0f;
+    font-style: oblique;
+    font-size: 300%;
+}
+h2{
+    color:#d76a16;
+    font-style: italic;
+    font-size: 290%;
+}
+h3{
+    color: #b44e0f;
+    font-style: italic;
+    font-size: 200%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#banner, #banner2{
+    border-radius: 10%;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+#pag1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.texto, .texto2{
+    font-size: 200%;
+    text-align: center;
+    color: #b44e0f;
+}
+footer{
+    text-align: center;
+    font-size: 120%;
+    background-color: #2196f3;
+    color: rgb(13, 15, 44);
+    padding: 2%;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+.about img{
+    height: 50vh;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.texto2{
+    width: 40vw;
+}
+#banner2{
+    width: 80%; height: 70vh;
+}
+.delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+#deliveryInfo{
+    display: flex;
+    align-items: center;
+}
+#deliveryMail, #deliveryWha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 180%;
+    height: 30vh;
+    color: #923108;
+}
+#whatsapp, #correo{
+    width: 120%;
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #923108;
+    width: 47vw;
+    margin-bottom: 10vh;
+    font-size: 220%;
+}
+tr, th, td{
+    border: 1px solid black;
+}
+.benefitsTips{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+.tips{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5%;
+    background-color: #2196f3;
+}
+.tips img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.list{
+    height: 80%;
+    color: #923108;
+    font-size: 120%;
+}
+#map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+}
+iframe{
+    width: 30vw; height: 50vh;
+}
+#form{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#formulario{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 35vw;
+    background-color: #2196f3;
+}
+#pqr{
+    width: 100%;
+    height: 20%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+input, select{
+    width: 100%;
+    border-radius: 8%;
+}
+#cash, #debitCard, #creditCard, #terms{
+    width: 5%;
+}
+#buttom{
+    width: auto; height: auto;
+    background-color: #5DADE2;
+    border-radius: 20%;
+    padding: 2%;
+}
+@media only screen and (max-width: 319px){
+    header, main{
+        display: none;
+    }
+    #error{
+        display: inline;
+        font-size: 200%;
+        color: black;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .barra{
+        flex-direction: column-reverse;
+        height: 100%;
+        position: static;
+    }
+    .barra img{
+        width: 15vw;
+    }
+    #links{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        width: 150vw;
+    }
+    main{
+        margin-top: 10vh;
+    }
+    #pag1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 10vh;
+    }
+    .about{
+        width: 120vw;
+        flex-direction: column;
+    }
+    .about p{
+        width: 100%;
+    }
+    .about img{
+        width: 100vw; height: 70vh;
+    }
+    .delivery{
+        width: 140vw; height: 70vh;
+    }
+    #deliveryInfo{
+        flex-direction: column;
+        height: 50vh;
+    }
+    #deliveryMail, #deliveryWha{
+        width: 90%;
+    }
+    #correo{
+        width: 110%;
+        margin-right: -20vw;
+    }
+    .benefitsTips{
+        width: 120vw; height: 170vh;
+    }
+    .tips{
+        flex-direction: column;
+        width: 100%; height: 80vh;
+    }
+    .tipImg{
+        width: 60vw; height: 45vh;
+    }
+    .list{
+        width: 63%;
+    }
+    #form{
+        flex-direction: column-reverse;
+        margin-top: 10vh;        
+        width: 120vw;
+        margin-bottom: 10vh;
+    }
+    #formulario{
+        width: 100%;
+    }
+    iframe{
+        width: 80vw; height: 50vh;
+    }
+    #location{
+        font-size: 130%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .barra{
+        flex-direction: column-reverse;
+        height: 100%;
+        position: static;
+    }
+    .barra img{
+        width: 15vw;
+    }
+    #links{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        width: 150vw;
+    }
+    main{
+        margin-top: 10vh;
+    }
+    #pag1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 10vh;
+    }
+    .about{
+        width: 120vw;
+        flex-direction: column;
+    }
+    .about p{
+        width: 100%;
+    }
+    .about img{
+        width: 60vw; height: 70vh;
+    }
+    .delivery{
+        width: 140vw; height: 70vh;
+    }
+    #deliveryInfo{
+        flex-direction: column;
+        height: 50vh;
+    }
+    #deliveryMail, #deliveryWha{
+        width: 90%;
+    }
+    #correo{
+        width: 115%;
+        margin-right: -15vw;
+    }
+    .benefitsTips{
+        width: 120vw; height: 185vh;
+    }
+    .tips{
+        flex-direction: column;
+        width: 85%; height: 88vh;
+    }
+    .tipImg{
+        width: 45vw; height: 50vh;
+    }
+    .list{
+        width: 28%; height: 40%;
+    }
+    #form{
+        flex-direction: column-reverse;
+        margin-top: 10vh;        
+        width: 90vw;
+        margin-bottom: 10vh;
+    }
+    #formulario{
+        width: 100%;
+    }
+    iframe{
+        width: 100%; height: 100%;
+    }
+    #location{
+        font-size: 130%;
+    }
+    #map{
+        width: 70vw; height: 70vh;
+    }
+}
+@media only screen and (min-width:1024px){
+    .barra{
+        position: fixed;
+        height: 12vh;
+        width: 100%;
+    }
+    .barra img{
+        width: 4vw;
+    }
+    .about{
+        width: 70vw;
+    }
+    .about img{
+        width: 25vw;
+    }
+    .delivery{
+        width: 60vw; height: 45vh;
+    }
+    .tips{ 
+        width: 65vw; height: 30vh;
+        transition:
+            width 2s,
+            height 2s,
+            rotate 2s;
+    }
+    .tips:hover{
+    width: 75vw; height: 45vh;
+    }
+    .tipImg{
+        width: 25%; height: 100%;
+    }
+    .list{
+        width: 50%;
+    }
+    #correo{
+        width: 150%;
+        margin-left: -3vw;
+    }
+}

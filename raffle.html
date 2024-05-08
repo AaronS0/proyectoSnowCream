@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle</title>
+    <link rel="shortcut icon" href="/images/heladoIcon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="error">It is not possible to view this page on a device smaller than 320px</h1>
+    <header>
+        <nav class="barra">
+            <div id="links">
+                <a href="/index.html">Home</a>
+                <a href="/aboutUs.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="information.html">Information</a>
+                <a href="benefitsTips.html">Benefits</a>
+                <a style="background-color: #4fafff; border-radius: 25%; border: solid 1px blue;" href="#">Raffle</a>
+            </div>
+            <div>
+                <img src="/images/heladoIcon.png" alt="logo">
+            </div>
+        </nav>
+        <div class="title">
+            <h2>Raffle</h2>
+            <h3>You can collaborate to hold an exhibition event and participate in a raffle to win an easel</h3>
+        </div>
+    </header>
+    <main>
+        <div id="form">
+            <div id="map">
+                <h3 id="location">Our location is located at:</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205475.50533479796!2d-118.43412076576038!3d34.07896758665006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1712612814368!5m2!1ses-419!2sco"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="formulario">
+                <form action="index.html" method="get">
+                    <label for="nombre">First name</label>
+                    <input type="text" id="nombre" name="name" required maxlength="10">
+                    <br>
+                    <label for="ap">Last name</label>
+                    <input type="text" name="apellido" id="ap" required maxlength="14">
+                    <br>
+                    <label for="virtual">Choose meet or zoom</label>
+                    <select name="vir" id="virtual">
+                        <option value="default">Select an option</option>
+                        <option value="meet">Meet</option>
+                        <option value="zoom">Zoom</option>
+                    </select>
+                    <br>
+                    <label for="date">Choose date</label>
+                    <input type="date" id="date" name="chooseDate" value="2024-08-04" min="2024-08-05" max="2024-12-31">
+                    <br>
+                    <label for="cash">Payment options</label>
+                    <div>
+                        <input type="radio" id="cash" name="method" value="ch">
+                        <label for="cash">Cash</label>
+                        <br>
+                        <input type="radio" id="creditCard" name="method" value="cc">
+                        <label for="creditCard">Credit card</label>
+                        <br>
+                        <input type="radio" id="debitCard" name="method" value="dc">
+                        <label for="debitCard">Debit card</label>
+                        <br>
+                        <br>
+                        <label for="pqr">Message (optional)</label>
+                        <textarea name="comentarios" id="pqr" cols="20" rows="8" placeholder="Enter your message">
+                        </textarea>
+                        <br>
+                        <input type="checkbox" name="terminos" id="terms" required value="terminos">
+                        <label for="terms">I accept terms and conditions</label>
+                        <input id="buttom" type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Created by: Aaron Sanchez ♣
+        </p>
+    </footer>
+</body>
+</html>
