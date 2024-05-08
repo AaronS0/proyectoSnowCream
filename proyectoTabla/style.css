@@ -1,0 +1,41 @@
+*{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    width: 99.85vw; height: 99.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.lista{
+    width: 45vw; height: 95vh;
+    margin-right: 3vw;
+    
+}
+.tabla{
+    width: 50vw; height: 60vh;
+    text-align: center;
+}
+table, tr, th, td{
+    border: 1px solid black;
+}
+.bandas, ul{
+    font-size: 35px;
+    font-weight: bold;
+}
+.bandas{
+    font-size: 26px;
+}
+ul li{
+    font-size: 23px;
+    font-weight: normal;
+}
+#uno{
+    background-color: red;
+}
+#dos{
+    background-color: blue;
+}

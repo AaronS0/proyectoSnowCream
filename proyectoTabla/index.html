@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos al concierto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lista">
+    <ul>Mis bandas favoritas
+        <li class="bandas">Linkin park
+            <ul>
+                <li>Chester Bennington - Vocalista</li>
+                <li>Mike Shinoda - Sintetizador</li>
+                <li>Joe Hahn - Tocadiscos</li>
+                <li>Rob Bourdon - Baterista</li>
+            </ul>
+        </li>
+        <li class="bandas">Zona Ganjah
+            <ul>
+                <li>Jose Gahona - Vocalista</li>
+                <li>Malaya - Teclado</li>
+                <li>Cocho - Bajo eléctrico</li>
+                <li>Lucia Miremont - Coros</li>
+            </ul>
+        <li class="bandas">Wu-Tang Clan
+            <ul>
+                <li>RZA (Robert Diggs) - Mc, productor y vocalista</li>
+                <li>GZA (Gary Grice) - Mc, vocalista</li>
+                <li>Ol' Dirty Bastard (Russell Jones) - Mc, vocalista</li>
+                <li>Method Man (Clifford Smith) - Mc, vocalista</li>
+            </ul>
+    </ul>
+    </div>
+    <div class="tabla">
+        <table>
+            <!-- colgroup, conjunto de columnas -->
+            <colgroup>
+                <col id="uno" span="1">
+                <col span="1">
+                <col id="dos" span="1">
+            </colgroup>
+            
+            <thead>
+                <tr>
+                    <th>Nombre de la banda</th> 
+                    <th>Nombre de los integrantes</th>
+                    <th>Año de nacimiento</th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3">Linkin park</th>
+                    <td>Chester Bennington</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Mike Shinoda</td>
+                    <td>1996</td>
+                </tr>
+                <tr>
+                    <td>Joe Hahn</td>
+                    <td>1996</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Zona Ganjah</th>
+                    <td>Jose Gahona</td>
+                    <td>1985</td>
+                </tr>
+                <tr>
+                    <td>Malaya</td>
+                    <td>1988</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Wu-Tang Clan</th>
+                    <td>RZA (Robert Diggs)</td>
+                    <td>1969</td>
+                </tr>
+                <tr>
+                    <td>GZA (Gary Grice)</td>
+                    <td>1966</td>
+                </tr>
+                <tr>
+                    <td>Ol' Dirty Bastard (Russell Jones)</td>
+                    <td>1968</td>
+                </tr>
+            </tbody>            
+        </table>
+    </div>
+</body>
+</html>
